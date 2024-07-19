@@ -16,3 +16,26 @@ For Intel Homebrew users, add this instead:
 ```
 alias brew='cp /opt/matthewyang/brew-root/brew.sh /usr/local/Homebrew/Library/Homebrew/brew.sh; /usr/local/Homebrew/bin/brew'
 ```
+
+-------------
+Here's how to restore your original non-root homebrew:
+
+Apple Silicon:
+- replace the root homebrew entry in .zshrc:
+```
+alias brew='/opt/homebrew/bin/brew'
+```
+- run this to reset homebrew permissions:
+```
+sudo chown -R [yourusername] ~/Library/Caches/Homebrew
+```
+
+Intel Silicon:
+- replace the root homebrew entry in .zshrc:
+```
+alias brew='/usr/local/homebrew/bin/brew'
+```
+- run this to reset homebrew permissions:
+```
+sudo chown -R [yourusername] ~/Library/Caches/Homebrew
+```

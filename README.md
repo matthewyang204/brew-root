@@ -39,3 +39,5 @@ alias brew='/usr/local/homebrew/bin/brew'
 ```
 sudo chown -R [yourusername] ~/Library/Caches/Homebrew
 ```
+
+After changing the stuff, restore homebrew by running `brew update` and then `brew upgrade` to reset the brew.sh file

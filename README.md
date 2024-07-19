@@ -40,4 +40,5 @@ alias brew='/usr/local/homebrew/bin/brew'
 sudo chown -R [yourusername] ~/Library/Caches/Homebrew
 ```
 
-After changing the stuff, restore homebrew by running `brew update` and then `brew upgrade` to reset the brew.sh file
+- After changing the stuff, restore homebrew by running `brew update` and then `brew upgrade` to reset the brew.sh file
+- Some installed casks and formulas may be broken; just run brew reinstall [yourcask/formula] and follow homebrew's instructions
